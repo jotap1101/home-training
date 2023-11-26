@@ -1,0 +1,835 @@
+/* import font */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Prompt:wght@100;400;700&display=swap');
+
+/* Variables */
+
+:root {
+    --body-color: #000000;
+    --nav-color: #202020;
+    --side-nav: #333030;
+    --text-color: #FFF;
+    --search-bar: #F2F2F2;
+    --search-text: #010718;
+    --blue: #3498db;
+    --dark-blue: #2980b9;
+    --red: #e74c3c;
+    --dark-red: #c0392b;
+    --black: #333;
+    --white: #fff;
+    --light-bg: #eee;
+    --box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
+}
+
+/* CSS reset default */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.5s ease;
+    font-family: 'Poppins', sans-serif;
+    user-select: none;
+}
+
+/* index.html */
+
+body#body-index {
+    height: 100vh;
+    width: 100vw;
+}
+
+main#main-index {
+    background-image: url(https://i.ibb.co/pzpCzRy/bg.jpg);
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    min-height: 100vh;
+    padding: 100px;
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.content-index {
+    max-width: 600px;
+}
+
+.content-index .contentBx h2 {
+    font-size: 4em;
+    color: #fff;
+    line-height: 1em;
+}
+
+.content-index .contentBx p {
+    font-size: 1.1em;
+    font-weight: 300;
+    color: #fff;
+    margin: 20px 0;
+    text-align: justify;
+}
+
+.content-index .contentBx a {
+    display: inline-block;
+    padding: 10px 30px;
+    background-color: #FF8000;
+    color: #000000;
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+div.social-index {
+    position: absolute;
+    bottom: 30px;
+    display: flex;
+}
+
+div.social-index a.face {
+    color: rgb(18, 32, 223);
+}
+
+div.social-index a.insta {
+    color: rgb(188, 42, 141);
+}
+
+div.social-index a.tt {
+    color: #1974ec;
+}
+
+div.social-index a i {
+    font-size: 25px;
+    margin-right: 15px;
+}
+
+/* treinos.html */
+
+body#body-trainingpage {
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--body-color);
+}
+
+main#main-trainingpage {
+    min-height: 100vh;
+    position: relative;
+    padding: 100px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main#main-trainingpage .div-alongamento {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 100px 75px 50px;
+}
+
+main#main-trainingpage h1 {
+    color: #FF8000;
+    font-size: 50px;
+    margin-bottom: 0;
+}
+
+main#main-trainingpage span {
+    color: #fff;
+    text-align: center;
+}
+
+main#main-trainingpage .info {
+    width: 100%;
+    display: flex;
+    margin-top: 50px;
+    gap: 30px;
+}
+
+.iframes {
+    width: 50%;
+    color: #fff;
+    text-align: center;
+}
+
+.iframes h3 {
+    margin: 20px 0;
+}
+
+.treinos {
+    display: flex;
+    margin: 50px auto;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.box-container {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.card {
+    background-color: #FF8000;
+    padding: 1rem;
+    box-shadow: 10px 10px #c46200;
+    border-radius: .5rem;
+    width: 400px;
+}
+
+.infos {
+    padding: 0.7rem 0;
+    font-size: 1rem;
+    color: black;
+    font-weight: 700;
+}
+
+.infos p {
+    color: #0e4bf1;
+}
+
+iframe {
+    width: 100%;
+}
+
+main#main-trainingpage .div-emagrecimento {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    color: #fff;
+    background-color: #0f0e0e;
+    padding: 50px 75px 50px;
+}
+
+main#main-trainingpage .div-emagrecimento .info-emagrecimento {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+.info-divide {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.info-divide h2 {
+    margin: 0px 0px 10px;
+}
+
+main#main-trainingpage .div-abdominais {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    color: #fff;
+    background-color: #1b1919;
+    padding: 50px 75px 50px;
+}
+
+main#main-trainingpage .div-funcionais {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    color: #fff;
+    background-color: #0f0e0e;
+    padding: 50px 75px 50px;
+}
+
+main#main-trainingpage .div-hipertrofia {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    color: #fff;
+    background-color: #000000;
+    padding: 50px 75px 50px;
+}
+
+main#main-trainingpage .div-yoga {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    color: #fff;
+    background-color: #0f0e0e;
+    padding: 50px 75px 50px;
+}
+
+main#main-trainingpage .dica {
+    background-color: #FF8000;
+    color: #000000;
+    padding: 50px 75px 50px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+/* faq.html */
+
+body#body-faqpage {
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--body-color);
+}
+
+main#main-faqpage {
+    min-height: 100vh;
+    padding: 100px 0px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.accordion {
+    display: flex;
+    max-width: 1010px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    border-radius: 25px;
+    padding: 45px 90px 45px 60px;
+}
+
+.accordion .image-box {
+    height: 360px;
+    width: 300px;
+}
+
+.accordion .image-box img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.accordion .accordion-text {
+    width: 60%;
+}
+
+.accordion .accordion-text .title {
+    font-size: 35px;
+    font-weight: 600;
+    color: #FF8000;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.accordion .accordion-text .faq-text {
+    margin-top: 25px;
+    height: 263px;
+    overflow-y: auto;
+}
+
+.faq-text::-webkit-scrollbar {
+    display: none;
+}
+
+.accordion .accordion-text li {
+    list-style: none;
+    cursor: pointer;
+}
+
+.accordion-text li .question-arrow {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.accordion-text li .question-arrow .question {
+    font-size: 18px;
+    font-weight: 500;
+    color: #000000;
+    transition: all 0.3s ease;
+}
+
+.accordion-text li .question-arrow .arrow {
+    font-size: 20px;
+    color: #000000;
+    transition: all 0.3s ease;
+}
+
+.accordion-text li.showAnswer .question-arrow .arrow {
+    transform: rotate(-180deg);
+}
+
+.accordion-text li:hover .question-arrow .question,
+.accordion-text li:hover .question-arrow .arrow {
+    color: #FF8000;
+}
+
+.accordion-text li.showAnswer .question-arrow .question,
+.accordion-text li.showAnswer .question-arrow .arrow {
+    color: #FF8000;
+}
+
+.accordion-text li .line {
+    display: block;
+    height: 2px;
+    width: 100%;
+    margin: 10px 0;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.accordion-text li p {
+    width: 92%;
+    font-size: 15px;
+    font-weight: 500;
+    color: #000000;
+    display: none;
+}
+
+.accordion-text li.showAnswer p {
+    display: block;
+}
+
+/* sobre.html */
+
+body#body-aboutuspage {
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--body-color);
+}
+
+main.cards {
+    background-color: var(--body-color);
+    min-height: 100vh;
+    padding: 100px 0px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main.cards section.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: white;
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    max-height: 468px;
+    margin-left: 30px;
+}
+
+main.cards section.card:first-child {
+    margin-left: 0;
+}
+
+div.circle {
+    width: 150px;
+    height: 150px;
+    border: 3px solid #000000;
+    border-radius: 50%;
+    overflow: hidden;
+    float: left;
+    margin-top: 0;
+}
+
+img.img {
+    display: block;
+    max-width: 100%;
+}
+
+main.cards section.card img {
+    width: 100%;
+}
+
+main.cards section.card h3 {
+    font-size: 100%;
+    margin: 16px 0;
+}
+
+main.cards section.card span {
+    font-weight: 300;
+    max-width: 240px;
+    font-size: 80%;
+    margin-bottom: 16px;
+}
+
+main.cards section.card div.social-aboutuspage {
+    display: flex;
+}
+
+main.cards section.card div.social-aboutuspage a.face {
+    color: rgb(18, 32, 223);
+}
+
+main.cards section.card div.social-aboutuspage a.insta {
+    color: rgb(188, 42, 141);
+}
+
+main.cards section.card div.social-aboutuspage a.tt {
+    color: #1974ec;
+}
+
+main.cards section.card div.social-aboutuspage a i {
+    font-size: 50px;
+    margin-right: 15px;
+}
+
+/* contato.html */
+
+body#body-contactpage {
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--body-color);
+}
+
+main#main-contactpage {
+    min-height: 100vh;
+    padding: 100px 0px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-contactpage {
+    width: 85%;
+    background: #fff;
+    border-radius: 6px;
+    padding: 30px 60px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.container-contactpage .content-contactpage {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container-contactpage .content-contactpage .left-side {
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    position: relative;
+}
+
+.content-contactpage .left-side::before {
+    content: '';
+    position: absolute;
+    height: 70%;
+    width: 2px;
+    right: -15px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #98857E;
+}
+
+.content-contactpage .left-side .details {
+    margin: 14px;
+    text-align: center;
+}
+
+.content-contactpage .left-side .details i {
+    font-size: 30px;
+    color: #FF8000;
+    margin-bottom: 10px;
+}
+
+.content-contactpage .left-side .details .topic {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.content-contactpage .left-side .details .text-one,
+.content-contactpage .left-side .details .text-two {
+    font-size: 14px;
+    color: #afafb6;
+}
+
+
+.container-contactpage .content-contactpage .right-side {
+    width: 75%;
+    margin-left: 75px;
+}
+
+.content-contactpage .right-side .topic-text {
+    font-size: 23px;
+    font-weight: 600;
+    color: #FF8000;
+}
+
+.right-side .input-box {
+    height: 50px;
+    width: 100%;
+    margin: 12px 0;
+}
+
+.right-side .input-box input,
+.right-side .input-box textarea {
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    background: #F0F1F8;
+    border-radius: 6px;
+    padding: 0 15px;
+    resize: none;
+}
+
+.right-side .message-box {
+    min-height: 110px;
+}
+
+.right-side .input-box textarea {
+    padding-top: 6px;
+}
+
+.right-side .button {
+    display: inline-block;
+    display: flex;
+    justify-content: center;
+    margin-top: 12px;
+}
+
+.right-side .button input[type="submit"] {
+    color: #000000;
+    font-size: 18px;
+    outline: none;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    background-color: #FF8000;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.button input[type="submit"]:hover {
+    background-color: #000000;
+    color: #FF8000;
+}
+
+/* login.html */
+
+body#body-loginpage {
+    height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background-color: #000000;
+}
+
+span.brand {
+    margin-bottom: 30px;
+}
+
+span.brand a {
+    text-decoration: none;
+    font-size: 50px;
+    font-weight: 700;
+    color: #fff;
+}
+
+span.brand a span {
+    background-color: #FF8000;
+    color: #000000;
+    padding: 5px;
+    border-radius: 12px;
+}
+
+.container {
+    position: relative;
+    max-width: 430px;
+    width: 100%;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin: 0 20px;
+}
+
+.container .forms {
+    display: flex;
+    align-items: center;
+    height: 440px;
+    width: 200%;
+    transition: height 0.2s ease;
+}
+
+
+.container .form {
+    width: 50%;
+    padding: 30px;
+    background-color: #fff;
+    transition: margin-left 0.18s ease;
+}
+
+.container.active .login {
+    margin-left: -50%;
+    opacity: 0;
+    transition: margin-left 0.18s ease, opacity 0.15s ease;
+}
+
+.container .signup {
+    opacity: 0;
+    transition: opacity 0.09s ease;
+}
+
+.container.active .signup {
+    opacity: 1;
+    transition: opacity 0.4s ease;
+}
+
+.container.active .forms {
+    height: 600px;
+}
+
+.container .form .title {
+    position: relative;
+    font-size: 27px;
+    font-weight: 600;
+}
+
+.form .title::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 30px;
+    background-color: #FF8000;
+    border-radius: 25px;
+}
+
+.form .input-field {
+    position: relative;
+    height: 50px;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.input-field input {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    padding: 0 35px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    border-bottom: 2px solid #000000;
+    border-top: 2px solid transparent;
+    transition: all 0.2s ease;
+}
+
+.input-field input:is(:focus, :valid) {
+    border-bottom-color: #FF8000;
+}
+
+.input-field i {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #000000;
+    font-size: 23px;
+    transition: all 0.2s ease;
+}
+
+.input-field input:is(:focus, :valid)~i {
+    color: #FF8000;
+}
+
+.input-field i.icon {
+    left: 0;
+}
+
+.input-field i.showHidePw {
+    right: 0;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.form .checkbox-text {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.checkbox-text .checkbox-content {
+    display: flex;
+    align-items: center;
+}
+
+.checkbox-content input {
+    margin: 0 8px -2px 4px;
+    accent-color: #FF8000;
+}
+
+.form .text {
+    color: #000000;
+    font-size: 14px;
+}
+
+.form a.text {
+    color: #4070f4;
+    text-decoration: none;
+}
+
+.form a:hover {
+    text-decoration: underline;
+}
+
+.form .button {
+    margin-top: 35px;
+}
+
+.form .button input {
+    border: none;
+    color: #000000;
+    font-size: 17px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    border-radius: 6px;
+    background-color: #FF8000;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.button input:hover {
+    background-color: #000000;
+    color: #FF8000;
+}
+
+.form .login-signup {
+    margin-top: 30px;
+    text-align: center;
+}
+
+/* admin-training */
+
+body#body-admin-training {
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--body-color);
+}
+
+main#main-admin-training {
+    min-height: 100vh;
+    padding: 100px 0px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

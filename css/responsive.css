@@ -1,0 +1,292 @@
+/* Responsive navigation */
+
+@media only screen and (max-width: 790px) {
+    nav .nav-bar .sidebarOpen {
+        display: block;
+    }
+
+    .menu {
+        position: fixed;
+        height: 100%;
+        width: 320px;
+        left: -100%;
+        top: 0;
+        padding: 20px;
+        background-color: var(--side-nav);
+        z-index: 100;
+        transition: all 0.4s ease;
+    }
+
+    nav.active-navbar .menu {
+        left: -0%;
+    }
+
+    nav.active-navbar .nav-bar .navLogo a {
+        opacity: 0;
+        transition: all 0.3s ease;
+    }
+
+    .menu .logo-toggle {
+        display: block;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .logo-toggle .siderbarClose {
+        color: var(--text-color);
+        font-size: 24px;
+        cursor: pointer;
+    }
+
+    .nav-bar .nav-list {
+        flex-direction: column;
+        padding-top: 30px;
+    }
+
+    .nav-list .nav-items a {
+        display: block;
+        margin-top: 20px;
+    }
+}
+
+/* Responsive index */
+
+@media only screen and (max-width: 790px) {
+    main#main-index {
+        padding: 40px;
+        background-image: url(https://i.ibb.co/r038886/bg2.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+
+    .content-index .contentBx h2 {
+        font-size: 2.5em;
+    }
+
+    .content-index .contentBx p {
+        font-size: 1em;
+    }
+}
+
+/* Responsive training */
+
+@media only screen and (max-width: 790px) {
+    main#main-trainingpage .div-alongamento {
+        padding: 100px 40px 50px;
+    }
+
+    main#main-trainingpage h1 {
+        font-size: 30px;
+    }
+
+    main#main-trainingpage span {
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .info {
+        flex-direction: column;
+    }
+
+    .info .iframes {
+        width: 100%;
+    }
+
+    .info .iframes h3 {
+        margin-bottom: 20px;
+    }
+
+    .info .iframes iframe {
+        width: 100%;
+    }
+
+    main#main-trainingpage .div-emagrecimento {
+        padding: 50px 40px;
+    }
+
+    main#main-trainingpage .div-abdominais {
+        padding: 50px 40px;
+    }
+
+    main#main-trainingpage .div-funcionais {
+        padding: 50px 40px;
+    }
+
+    main#main-trainingpage .div-hipertrofia {
+        padding: 50px 40px;
+    }
+
+    main#main-trainingpage .div-yoga {
+        padding: 50px 40px;
+    }
+
+    main#main-trainingpage .dica {
+        padding: 30px 20px;
+        text-align: center;
+    }
+
+    .treinos {
+        flex-direction: column;
+        margin-bottom: 90px;
+    }
+
+    .card {
+        width: 95%;
+    }
+}
+
+/* Responsive faq */
+
+@media only screen and (max-width: 790px) {}
+
+@media only screen and (max-width: 994px) {
+    body#body-faqpage {
+        padding: 40px 20px;
+    }
+
+    .accordion {
+        max-width: 100%;
+        padding: 45px 60px 45px 60px;
+    }
+
+    .accordion .image-box {
+        height: 360px;
+        width: 220px;
+    }
+
+    .accordion .accordion-text {
+        width: 63%;
+    }
+}
+
+@media only screen and (max-width: 820px) {
+    .accordion {
+        flex-direction: column;
+    }
+
+    .accordion .image-box {
+        height: 360px;
+        width: 300px;
+        background: #7d2ae8;
+        width: 100%;
+        border-radius: 25px;
+        padding: 30px;
+    }
+
+    .accordion .accordion-text {
+        width: 100%;
+        margin-top: 30px;
+    }
+}
+
+@media only screen and (max-width: 538px) {
+    .accordion {
+        padding: 25px;
+    }
+
+    .accordion-text li p {
+        width: 98%;
+    }
+}
+
+/* Responsive about */
+
+@media only screen and (max-width: 790px) {
+    main.cards {
+        flex-direction: column;
+    }
+
+    main.cards section.card {
+        margin-left: 0;
+        margin-bottom: 32px;
+        width: 85%;
+    }
+
+    main.cards section.card:last-child {
+        margin-bottom: 0;
+    }
+
+    main.cards section.card button {
+        font-size: 70%;
+    }
+}
+
+/* Responsive contact */
+
+@media only screen and (max-width: 950px) {
+    .container-contactpage {
+        width: 100%;
+        padding: 30px 40px 40px 35px;
+    }
+
+    .container-contactpage .content-contactpage .right-side {
+        width: 75%;
+        margin-left: 55px;
+    }
+}
+
+@media only screen and (max-width: 820px) {
+    .container-contactpage {
+        margin: 10px 0;
+        height: 100%;
+    }
+
+    .container-contactpage .content-contactpage {
+        flex-direction: column-reverse;
+    }
+
+    .container-contactpage .content-contactpage .left-side {
+        width: 100%;
+        flex-direction: row;
+        margin-top: 40px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .container-contactpage .content-contactpage .left-side::before {
+        display: none;
+    }
+
+    .container-contactpage .content-contactpage .right-side {
+        width: 100%;
+        margin-left: 0;
+    }
+}
+
+@media only screen and (max-width: 790px) {
+    main#main-contactpage {
+        padding: 100px 20px 20px 20px;
+    }
+}
+
+/* Responsive login */
+
+@media only screen and (max-width: 790px) {
+    span.brand a {
+        font-size: 35px;
+    }
+
+    body#body-loginpage {
+        padding: 30px;
+    }
+
+    .container {
+        margin-bottom: 40px;
+    }
+
+    input::placeholder {
+        font-size: 15px;
+    }
+
+    .form .text {
+        color: #000000;
+        font-size: 15px;
+    }
+
+    .form .checkbox-text .text,
+    .login-signup .text {
+        font-size: 0.9rem;
+    }
+}
